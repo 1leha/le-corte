@@ -1,0 +1,37 @@
+.facts__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 180px;
+  padding-right: 180px;
+
+  border: solid 3px var(--color-third);
+}
+
+.facts__title {
+  margin-bottom: 80px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+
+    top: calc(100% + 40px);
+    left: calc(50%);
+    transform: translateX(-50%);
+
+    width: 160px;
+    height: 1px;
+
+    background-color: var(--color-white);
+  }
+}
+
+.facts__text {
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+.facts__img {
+  margin: 0 auto;
+}

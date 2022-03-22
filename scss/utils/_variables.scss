@@ -1,0 +1,22 @@
+// @import './colors';
+
+:root {
+  /* Переменные основных цветов */
+  --color-brand: #99862a;
+  --color-primary: #282828;
+  --color-secondary: #e6e3c4;
+  --color-third: #c4c4c4;
+  --color-white: #ffffff;
+  --color-bg: #ededed;
+
+  /* Переменные цветов активности */
+  --color-active: #806c1d;
+
+  /* Шрифты */
+  --primary-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Playfair Display', serif;
+
+  /* ЭФФЕКТЫ */
+  --transition-time: 250ms;
+  --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
