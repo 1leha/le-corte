@@ -345,13 +345,10 @@
           transform: translateY(-100%);
 }
 
-.form__input:not(:focus) {
-  -webkit-transition-property: color transform visibility;
-  transition-property: color transform visibility;
-  -webkit-transition-duration: var(--transition-time);
-          transition-duration: var(--transition-time);
-  -webkit-transition-timing-function: var(--transition-function);
-          transition-timing-function: var(--transition-function);
+.form__input:not(:placeholder-shown) + .form__custom-label {
+  top: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .form__custom-label {

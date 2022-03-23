@@ -12,6 +12,7 @@
 .form__label {
   display: block;
   position: relative;
+  
   @include font(13, 20, 500, 0);
 
   &--margin {
@@ -32,7 +33,6 @@
   outline: none;
 
   &::placeholder {
-    // color: transparent;
     visibility: hidden;
     @include projTransitions(color visibility);
   }
@@ -53,15 +53,19 @@
     }
   }
 
-  &:not(:focus) {
-    @include projTransitions(color transform visibility);
+  &:not(:placeholder-shown) + .form__custom-label {
+    top: 0;
+    transform: translateY(-100%);
   }
 }
 
 .form__custom-label {
   position: absolute;
+
   left: 0;
   top: 50%;
+
   transform: translateY(-50%);
+
   @include projTransitions(color transform visibility);
 }
