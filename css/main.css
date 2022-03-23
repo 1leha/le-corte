@@ -143,6 +143,17 @@
   background-color: var(--color-active);
 }
 
+.button--dark {
+  display: block;
+  width: 100%;
+  background-color: var(--color-primary);
+  border: solid 1px var(--color-white);
+}
+
+.button--dark:hover, .button--dark:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .title {
   font-family: var(--secondary-font);
   font-size: 36px;
@@ -212,6 +223,149 @@
 .gallery__item--big {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.list__item {
+  width: 100%;
+}
+
+.list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.form__label {
+  display: block;
+  position: relative;
+  font-size: 13px;
+  line-height: calc(20 / 13);
+  font-weight: 500;
+  letter-spacing: 0em;
+  color: var(--color-white);
+}
+
+.form__label--margin {
+  margin-bottom: 50px;
+}
+
+.form__input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-white);
+  color: var(--color-white);
+  outline: none;
+  -webkit-transition-property: color transform visibility;
+  transition-property: color transform visibility;
+  -webkit-transition-duration: var(--transition-time);
+          transition-duration: var(--transition-time);
+  -webkit-transition-timing-function: var(--transition-function);
+          transition-timing-function: var(--transition-function);
+}
+
+.form__input::-webkit-input-placeholder {
+  visibility: hidden;
+  -webkit-transition-property: color visibility;
+  transition-property: color visibility;
+  -webkit-transition-duration: var(--transition-time);
+          transition-duration: var(--transition-time);
+  -webkit-transition-timing-function: var(--transition-function);
+          transition-timing-function: var(--transition-function);
+}
+
+.form__input:-ms-input-placeholder {
+  visibility: hidden;
+  -webkit-transition-property: color visibility;
+  transition-property: color visibility;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-function);
+}
+
+.form__input::-ms-input-placeholder {
+  visibility: hidden;
+  -webkit-transition-property: color visibility;
+  transition-property: color visibility;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-function);
+}
+
+.form__input::placeholder {
+  visibility: hidden;
+  -webkit-transition-property: color visibility;
+  transition-property: color visibility;
+  -webkit-transition-duration: var(--transition-time);
+          transition-duration: var(--transition-time);
+  -webkit-transition-timing-function: var(--transition-function);
+          transition-timing-function: var(--transition-function);
+}
+
+.form__input:focus::-webkit-input-placeholder {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  color: var(--color-third);
+  visibility: visible;
+}
+
+.form__input:focus:-ms-input-placeholder {
+  transition-delay: 0.2s;
+  color: var(--color-third);
+  visibility: visible;
+}
+
+.form__input:focus::-ms-input-placeholder {
+  transition-delay: 0.2s;
+  color: var(--color-third);
+  visibility: visible;
+}
+
+.form__input:focus::placeholder {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  color: var(--color-third);
+  visibility: visible;
+}
+
+.form__input:focus + .form__custom-label {
+  top: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.form__input:not(:focus) {
+  -webkit-transition-property: color transform visibility;
+  transition-property: color transform visibility;
+  -webkit-transition-duration: var(--transition-time);
+          transition-duration: var(--transition-time);
+  -webkit-transition-timing-function: var(--transition-function);
+          transition-timing-function: var(--transition-function);
+}
+
+.form__custom-label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition-property: color transform visibility;
+  transition-property: color transform visibility;
+  -webkit-transition-duration: var(--transition-time);
+          transition-duration: var(--transition-time);
+  -webkit-transition-timing-function: var(--transition-function);
+          transition-timing-function: var(--transition-function);
 }
 
 /* Глобальные стили страницы */
@@ -362,7 +516,6 @@ address {
   color: var(--color-brand);
 }
 
-/* *Стили для Героя */
 .hero {
   max-width: 1920px;
   height: 900px;
@@ -478,6 +631,69 @@ address {
   font-weight: 400;
   letter-spacing: 0em;
   color: var(--color-primary);
+}
+
+.enroll {
+  position: relative;
+  padding-top: 130px;
+}
+
+.enroll__wrapper {
+  width: 541px;
+  margin: 0 auto;
+}
+
+.enroll__container {
+  position: relative;
+  /* !удалить */
+  outline: 1px solid green;
+  padding-top: 105px;
+  padding-bottom: 80px;
+  padding-left: 180px;
+  padding-right: 180px;
+  border: solid 3px var(--color-third);
+}
+
+.enroll__text {
+  margin-bottom: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.enroll__title {
+  position: absolute;
+  display: inline-block;
+  width: 490px;
+  top: -33px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: var(--color-primary);
+}
+
+.enroll__title::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 40px);
+  left: calc(50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 160px;
+  height: 1px;
+  background-color: var(--color-white);
+}
+
+.enroll__img {
+  position: absolute;
+  top: -70px;
+}
+
+.enroll__img--vine-grape {
+  left: -30px;
+}
+
+.enroll__img--vine-barrel {
+  right: -55px;
 }
 
 /* *Стили для Футер */

@@ -1,0 +1,68 @@
+.enroll {
+  position: relative;
+  padding-top: 130px;
+}
+.enroll__wrapper {
+  width: 541px;
+  margin: 0 auto;
+}
+
+.enroll__container {
+  position: relative;
+  /* !удалить */
+  outline: 1px solid green;
+  // background-color: lightblue;
+
+  padding-top: 105px;
+  padding-bottom: 80px;
+  padding-left: 180px;
+  padding-right: 180px;
+
+  border: solid 3px var(--color-third);
+}
+
+.enroll__text {
+  margin-bottom: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.enroll__title {
+  position: absolute;
+  display: inline-block;
+  width: 490px;
+
+  top: -33px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: var(--color-primary);
+
+  &::after {
+    content: '';
+    position: absolute;
+
+    top: calc(100% + 40px);
+    left: calc(50%);
+    transform: translateX(-50%);
+
+    width: 160px;
+    height: 1px;
+
+    background-color: var(--color-white);
+  }
+}
+
+.enroll__img {
+  position: absolute;
+  top: -70px;
+
+  &--vine-grape {
+    left: -30px;
+  }
+
+  &--vine-barrel {
+    right: -55px;
+  }
+}
+

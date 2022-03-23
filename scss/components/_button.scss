@@ -20,4 +20,15 @@
     color: var(--color-white);
     background-color: var(--color-active);
   }
+
+  &--dark {
+    display: block;
+    width: 100%;
+    background-color: var(--color-primary);
+    border: solid 1px var(--color-white);
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
 }

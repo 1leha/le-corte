@@ -136,7 +136,8 @@
           </div>
           <ul class="novelties__gallery gallery">
             <li class="gallery__item gallery__item--big">
-              <img class="gallery__img"
+              <img
+                class="gallery__img"
                 srcset="./img/foto-01.jpg 1x, ./img/foto-01@2x.jpg 2x"
                 src="./img/foto-01.jpg"
                 alt="Бокал вина"
@@ -145,7 +146,8 @@
               />
             </li>
             <li class="gallery__item">
-              <img class="gallery__img"
+              <img
+                class="gallery__img"
                 srcset="./img/foto-02.jpg 1x, ./img/foto-02@2x.jpg 2x"
                 src="./img/foto-02.jpg"
                 alt="Витрина с бутылками вина"
@@ -154,7 +156,8 @@
               />
             </li>
             <li class="gallery__item">
-              <img class="gallery__img"
+              <img
+                class="gallery__img"
                 srcset="./img/foto-03.jpg 1x, ./img/foto-03@2x.jpg 2x"
                 src="./img/foto-03.jpg"
                 alt="Бутылки вина на хранении в подвале"
@@ -163,6 +166,73 @@
               />
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="section enroll">
+        <div class="container enroll__container">
+          <h2 class="enroll__title title">Запись на дегустацию</h2>
+          <div class="enroll__wrapper">
+            <p class="enroll__text text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id
+              imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum.
+            </p>
+
+            <form class="enroll__form form" action="" autocomplete="off" novalidate>
+              <ul class="form__list list">
+                <li class="list__item">
+                  <label class="form__label">
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="username"
+                      placeholder="Иванов Иван"
+                    />
+                    <span class="form__custom-label">Имя</span>
+                  </label>
+                </li>
+                <li class="list__item">
+                  <label class="form__label">
+                    <input
+                      class="form__input"
+                      type="tel"
+                      name="phone"
+                      placeholder="+000000000000"
+                      maxlength="13"
+                    />
+                    <span class="form__custom-label">Телефон</span>
+                  </label>
+                </li>
+              </ul>
+
+              <label class="form__label form__label--margin">
+                <input
+                  class="form__input"
+                  type="tel"
+                  name="phone"
+                  placeholder="Бутик на Невском 103"
+                />
+                <span class="form__custom-label">Место встречи</span>
+              </label>
+              <button class="button button--dark">записаться</button>
+            </form>
+          </div>
+          <img
+            class="enroll__img enroll__img--vine-grape"
+            srcset="./img/vine-grape.jpg 1x, ./img/vine-grape@2x.png 2x"
+            src="./img/vine-grape.png"
+            alt="Изображение виноградной лозы"
+            width="260"
+            height="260"
+          />
+          <img
+            class="enroll__img enroll__img--vine-barrel"
+            srcset="./img/vine-barrel.jpg 1x, ./img/vine-barrel@2x.png 2x"
+            src="./img/vine-barrel.png"
+            alt="Изображение виноградной бочки"
+            width="260"
+            height="200"
+          />
         </div>
       </section>
     </main>
